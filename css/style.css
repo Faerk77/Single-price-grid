@@ -88,7 +88,7 @@
     padding: 15px 0px 15px 0px;
     box-sizing: border-box;
     border-radius: 5px;
-    /* box-shadow: 5px 5px 150px rgb(53, 52, 52);     */
+    box-shadow: 0px 5px 20px rgba(87, 84, 84, 0.466);    
 }
 .main__whyus {
     padding: 15px 25px 15px 25px;
@@ -134,16 +134,21 @@
     .main {
         display: grid;
         grid-template-columns: 350px 350px;
+        border-radius: 25px;
+        background-color: #fff;
+        
     }
 
 .main__subs{
     width: auto;
     padding: 20px 25px 20px 40px;
+    border-radius: 0px 0px 0px 5px;
 }
 .subs__h2 {
         margin-top: 15px; 
         margin-bottom: 15px;
 }
+
 .subs__price {
     margin-bottom: 10px;
 }
@@ -151,6 +156,7 @@
     margin-bottom: 40px;
 }
 .main__whyus {
+    border-radius: 0px 0px 5px 0px;
     margin-bottom: 0px;
     padding: 20px 25px 20px 40px;
      }
