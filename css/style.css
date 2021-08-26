@@ -6,7 +6,7 @@
     --Grayish-Blue: hsl(218, 22%, 67%);
 }
 
-body {
+.body {
     background-color: var(--Grayish-Blue);
     display: flex;
     flex-direction: column;
@@ -15,7 +15,6 @@ body {
 
 .header{
     background-color: var(--Light-Gray);
-    max-width: 100%;
     width: 320px;
     margin-top: 100px;
     padding: 15px 25px 15px 25px;
@@ -23,21 +22,21 @@ body {
     border-radius: 5px 5px 0px 0px;
 }
 
-.header h1 {
+.header__h1 {
     color: var(--Cyan);
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 25px;
 }
 
-.header h2 {
+.header__h2 {
     color: var(--Bright-Yellow);
     font-size: 0.97rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.header p {
+.header__p {
     color: var(--Grayish-Blue);
     font-size: 0.88rem;
     line-height: 25px;
@@ -54,7 +53,7 @@ body {
     color: var(--Light-Gray);
 }
 
-.main__subs h2{
+.subs__h2{
     color: var(--Light-Gray);
     font-size: 1.15rem;
     /* margin-top: 5px; */
@@ -92,16 +91,67 @@ body {
     /* box-shadow: 5px 5px 150px rgb(53, 52, 52);     */
 }
 .main__whyus {
-    padding: 20px;
+    padding: 15px 25px 15px 25px;
     color: var(--Light-Gray);
-    background-color: hsl(179, 47%, 49%);
-    margin-bottom: 100px;
+    background-color: hsl(179, 46%, 50%);
     border-radius: 0px 0px 5px 5px ;
+    box-sizing: border-box;
+    font-size: 0.75rem;
+    margin-bottom: 100px;
 }
 .whyus__ul {
     list-style: none;
     padding:0;
-    line-height: 25px;
+    line-height: 22px;
+    font-size: 0.95rem;
+    font-weight: 200;
 }
 
+@media (min-width: 700px) {
 
+    .body {
+        height: 100vh;
+        margin: auto;
+        justify-content: center;
+    }
+    .header {
+        width: 700px;
+        padding: 25px 80px 20px 40px;
+    }
+    .header__h1 {
+        font-size: 1.6rem;
+    }
+
+    .header__h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .header__p {
+        font-size: 1.06rem;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 350px 350px;
+    }
+
+.main__subs{
+    width: auto;
+    padding: 20px 25px 20px 40px;
+}
+.subs__h2 {
+        margin-top: 15px; 
+        margin-bottom: 15px;
+}
+.subs__price {
+    margin-bottom: 10px;
+}
+.subs__description {
+    margin-bottom: 40px;
+}
+.main__whyus {
+    margin-bottom: 0px;
+    padding: 20px 25px 20px 40px;
+     }
+}
