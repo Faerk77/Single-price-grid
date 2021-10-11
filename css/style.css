@@ -7,19 +7,23 @@
 }
 
 .body {
-    background-color: var(--Grayish-Blue);
+    background-color: var(--Light-Gray);
     display: flex;
+    height: 920px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-
+.card{
+    box-shadow: 0.1px 0.1px 30px rgb(196, 193, 193);
+    border-radius: 10px;
+    overflow: hidden;
+}
 .header{
-    background-color: var(--Light-Gray);
+    background-color: white;
     width: 320px;
-    margin-top: 100px;
     padding: 15px 25px 15px 25px;
     box-sizing: border-box;
-    border-radius: 5px 5px 0px 0px;
 }
 
 .header__h1 {
@@ -56,7 +60,6 @@
 .subs__h2{
     color: var(--Light-Gray);
     font-size: 1.15rem;
-    /* margin-top: 5px; */
     margin: 0px 0px 20px 0px;
 }
 .subs__price {
@@ -87,17 +90,16 @@
     text-align: center;
     padding: 15px 0px 15px 0px;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: 0px 5px 20px rgba(87, 84, 84, 0.466);    
 }
 .main__whyus {
     padding: 15px 25px 15px 25px;
     color: var(--Light-Gray);
     background-color: hsl(179, 46%, 50%);
-    border-radius: 0px 0px 5px 5px ;
     box-sizing: border-box;
     font-size: 0.75rem;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 .whyus__ul {
     list-style: none;
@@ -134,7 +136,7 @@
     .main {
         display: grid;
         grid-template-columns: 350px 350px;
-        border-radius: 25px;
+        /* border-radius: 25px; */
         background-color: #fff;
         
     }
@@ -156,7 +158,6 @@
     margin-bottom: 40px;
 }
 .main__whyus {
-    border-radius: 0px 0px 5px 0px;
     margin-bottom: 0px;
     padding: 20px 25px 20px 40px;
      }
